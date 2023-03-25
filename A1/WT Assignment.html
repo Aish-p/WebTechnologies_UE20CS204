@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WebTech ODD Assignment</title>
+</head>
+<body style="background:linen">
+<button type="button" onclick="alert('WELLCOME TO THIS PAGE')">Click Me!</button>
+<script type = "text/javascript" src="a.js"></script> 
+<h1 style="border: 2px solid Tomato;"><b>Testing Procedure Template</b></h1>
+<img src="testing_pic.png" style="float:right";>
+<p style="color:brown"><b><u>Product testing is any process by means of which a researcher measures a product's performance, safety, quality, and compliance with established standards:</u></b></p>
+<p class="dashed" style="color:maroon"><i>Product testing seeks to ensure that consumers can understand what products will do for them and which products are the best value. Product testing is a strategy to increase consumer protection by checking the claims made during marketing strategies such as advertising, which by their nature are in the interest of the entity distributing the service and not necessarily in the interest of the consumer. The advent of product testing was the beginning of the modern consumer movement.</i></p>
+<p class="intro"style="color:maroon"><b>4 Reasons Why Product Testing Is Important for Manufacturers</b></p>
+<ul style="padding: 20px;">
+        <li style="margin: 8px;">Gives insight into system level functions.</li>
+        <li style="margin: 8px;">Find out what your product can endure</li>
+        <li style="margin: 8px;">Catch product defects early on.</li>
+	<li style="margin: 8px;">Quality Assurance.</li>
+    </ul>
+<style>
+p.intro {background-color: yellow;}
+p.dashed {border-style: dashed;}
+#ProductTesting {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#ProductTesting td, #ProductTesting th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#ProductTesting tr:nth-child(even){background-color: #f2f2f2;}
+
+#ProductTesting tr:hover {background-color: #ddd;}
+
+#ProductTesting th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.button {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: pink ;border-radius: 12px;color: black;} 
+.button3 {background-color: purple ;border-radius: 12px;} 
+.button4 {background-color: pink ;border-radius: 50%;;color: black;} 
+.button5 {background-color: purple ;border-radius: 50%;}
+.button6 {background-color: pink ;border-radius: 12px;color: black;}
+.button7 {background-color: purple ;border-radius: 12px;}
+.button8 {background-color: pink ;color: black;}
+</style>
+<table id="ProductTesting">
+  <tr>
+    <th>Testdate</th>
+    <th>Product</th>
+    <th>Quality standard</th>
+    <th>Comments</th>
+  </tr>
+  <tr>
+    <td>11 march 2020</td>
+    <td>Door handle</td>
+    <td>Good</td>
+    <td>Meets the standard</td>
+  </tr>
+  <tr>
+    <td>15 march 2020</td>
+    <td>Lock</td>
+    <td>Average</td>
+    <td>Asthetically not good</td>
+  </tr>
+  <tr>
+    <td>28 march 2020</td>
+    <td>Laptop</td>
+    <td>Bad</td>
+    <td>Dead pixels in the moniter</td>
+  </tr>
+  <tr>
+    <td>31 march 2020</td>
+    <td>Treadmill</td>
+    <td>Good</td>
+    <td>Working properly</td>
+  </tr>
+  <tr>
+    <td>3 april 2020</td>
+    <td>Flask</td>
+    <td>Bad</td>
+    <td>Not holding the heat for long time</td>
+  </tr>
+</table>
+<br>
+<br>
+<p style="float:right; color:red"><b><u>Current Date and Time is <span id="date-time"></u></b></span></p>
+<script>
+   var dt=new Date();
+   document.getElementById('date-time').innerHTML=dt;
+</script>
+<br>
+<br>
+<p id="test">TO READ HIDDEN</p>
+<button type="button"onclick='document.getElementById("test").innerHTML = "ThankYou! For Your Time, Have A Nice Day"'>Click Me!</button>
+<p>&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;</p>
+<button class="button">Ease of use</button>
+<button class="button button2">Performance</button>
+<button class="button button3">Quality Check</button>
+<button class="button button4">Aesthetic look</button>
+<button class="button button5">Effectiveness</button>
+<button class="button button6">Environmental friendly</button>
+<button class="button button7">Safety</button>
+<button class="button button8">Budget Friendly Throw Away Price</button>
+</body>
+</html>
