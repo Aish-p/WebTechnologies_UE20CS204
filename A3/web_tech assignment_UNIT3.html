@@ -1,0 +1,280 @@
+<html>
+  <head>
+    <title> REACT JS </title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+
+  <body style="text-align:center;background-color:rgb(208, 197, 193);;">
+    <h1 id="Head" style="color:rgb(109, 113, 116);;font-family:cursive; text-decoration:underline">
+         HOME CENTER
+    </h1>
+    <p style="font-size: 25px; font-weight: bold; color: maroon; align:center; font-family: sans-serif;">
+      Welcome to the grand festive season sale of home centre !
+    </p>
+     <h3 style="color: saddlebrown;">FLAT</h3>
+     <h2 style="border: 2px dashed hotpink;">40% - 60% OFF</h2>
+     <h3 style="color: saddlebrown;">ON THE ENTIRE FURNITURE RANGE with 5% cashback on abcd cards</h3>
+     <h3 style="color: brown;">HURRY exciting OFFERS on your way!!</h3>
+     <p style="color: hotpink;">&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;&diams;</p>
+    
+    <style>
+      .d1 {
+        background-color: mistyrose;
+        float: left;
+        display: grid;
+        border-style: solid;
+        border-width: medium;
+        border-color:maroon;
+      }
+      .d2 {
+        background-color: paleturquoise;
+        float: right;
+        display: grid;
+        border-style: solid;
+        border-width: medium;
+        border-color:dimgrey;
+      }
+      .d3 {
+        background-color: lemonchiffon;
+        float: right;
+        display: grid;
+        border-style: solid;
+        border-width: medium;
+        border-color:yellowgreen;
+      }
+      .d4 {
+        background-color: linen;
+        float: right;
+        display: grid;
+        border-style: solid;
+        border-width: medium;
+        border-color: olive;
+      }
+      .d5 {
+        background-color: thistle;
+        float: right;
+        display: grid;
+        border-style: solid;
+        border-width: medium;
+        border-color: plum;
+      }
+      
+      .i1{
+        width : 270px;
+        height: 250px;
+      } 
+      .i2{
+        width : 270px;
+        height: 250px;
+      }
+      .i3{
+        width : 270px;
+        height: 250px;
+      }
+      .i4{
+        width : 270px;
+        height: 250px;
+      }
+      .i5{
+        width : 270px;
+        height: 250px;
+      }
+
+      #root{
+          position: absolute;
+          display: flex;
+      }
+    </style>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        class Study_Chair extends React.Component
+        {
+          render()
+          {
+            return (
+              <div className = "d1" >
+                  <img src = "study chair.jfif" className = "i1"></img>
+                  <h1>{this.props.value.item} </h1>
+                  <h2> Price : {this.props.value.price} </h2>
+                  <h2> Quantity : {this.props.value.quantity} </h2>
+              <button
+                type="button"
+                onClick={() => {
+                  this.props.onQuantity(this.props.value);
+                }}
+              >
+                {" "}
+                +{" "}
+              </button>
+              </div>
+            );
+          }
+        }
+
+        class Side_Table extends React.Component
+        {
+          render()
+          {
+            return (
+              <div className = "d2">
+                <img src = "side table.jfif" className = "i2"></img>
+                <h1>{this.props.value.item} </h1>
+                <h2> Price : {this.props.value.price} </h2>
+                <h2> Quantity : {this.props.value.quantity} </h2>
+              <button
+                type="button"
+                onClick={() => {
+                  this.props.onQuantity(this.props.value);
+                }}
+              >
+                {" "}
+                +{" "}
+              </button>
+              </div>
+            );
+          }
+        }
+
+        class Snooker_Stick extends React.Component {
+          render() {
+            return (
+              <div className = "d3">
+                <img src = "snooker stick.jfif" className = "i3"></img>
+                <h1>{this.props.value.item} </h1>
+                <h2> Price : {this.props.value.price} </h2>
+                <h2> Quantity : {this.props.value.quantity} </h2>
+              <button
+                type="button"
+                onClick={() => {
+                  this.props.onQuantity(this.props.value);
+                }}
+              >
+                {" "}
+                +{" "}
+              </button>
+              </div>
+            );
+          }
+        }
+
+         class Lamp extends React.Component
+        {
+          render()
+          {
+            return (
+              <div className = "d4" >
+                  <img src = "lamp.jfif" className = "i4"></img>
+                  <h1>{this.props.value.item} </h1>
+                  <h2> Price : {this.props.value.price} </h2>
+                  <h2> Quantity : {this.props.value.quantity} </h2>
+              <button
+                type="button"
+                onClick={() => {
+                  this.props.onQuantity(this.props.value);
+                }}
+              >
+                {" "}
+                +{" "}
+              </button>
+              </div>
+            );
+          }
+        }
+
+         class Curtain extends React.Component
+        {
+          render()
+          {
+            return (
+              <div className = "d5" >
+                  <img src = "curtain.jfif" className = "i5"></img>
+                  <h1>{this.props.value.item} </h1>
+                  <h2> Price : {this.props.value.price} </h2>
+                  <h2> Quantity : {this.props.value.quantity} </h2>
+              <button
+                type="button"
+                onClick={() => {
+                  this.props.onQuantity(this.props.value);
+                }}
+              >
+                {" "}
+                +{" "}
+              </button>
+              </div>
+            );
+          }
+        }
+
+        class Main extends React.Component {
+          state = {
+            product:[{item:"STUDY CHAIR",price:7100,quantity:0},
+                    {item:"SIDE TABLE",price:1020, quantity: 0},
+                    {item:"SNOOKER STICK",price:2300, quantity:0},
+                    {item:"LAMP",price:800, quantity:0},
+                    {item:"CURTAINS",price:3000, quantity:0},
+
+            ],
+        };
+
+          handleQuantity = (p)=>{
+              let a = p.quantity;
+              a=a+1;
+              this.setState(state=>{
+                  p.quantity=a
+                  return state
+        })
+        }
+        handleBill = ()=>{
+            var sum = 0;
+            for (var i in this.state)
+            {
+            
+                var a = this.state[i];
+                for(var j=0;j<3;j++){
+                if (a[j].quantity != 0)
+                {
+                    sum = sum + (a[j].price)*(a[j].quantity);
+                }
+
+            }
+            }
+           return sum 
+        }
+          render() {
+            return (
+              <div>
+                  <div>
+                      <Study_Chair value={this.state.product[0]} onQuantity = {this.handleQuantity} onBill = {this.handleBill}/>
+                      <Side_Table value={this.state.product[1]} onQuantity = {this.handleQuantity} onBill = {this.handleBill}/>
+                      <Snooker_Stick value={this.state.product[2]} onQuantity = {this.handleQuantity} onBill = {this.handleBill} />
+                      <Lamp value={this.state.product[3]} onQuantity = {this.handleQuantity} onBill = {this.handleBill} />
+                      <Curtain value={this.state.product[4]} onQuantity = {this.handleQuantity} onBill = {this.handleBill} />
+                  </div>
+                  <div>    
+        <center><h1>Order Summery : </h1>
+        <h3><p>STUDY CHAIR : {this.state.product[0].quantity}*7100</p>
+        <p>CURTAIN: {this.state.product[4].quantity}*3000</p>
+        <p>LAMP: {this.state.product[3].quantity}*800</p>
+        <p>SNOOKER STICK : {this.state.product[2].quantity}*2300</p>
+        <p>SIDE TABLE: {this.state.product[1].quantity}*1020</p></h3>
+        <h1>NET AMOUNT: &#8377; {this.handleBill()}</h1></center>
+                 
+                  </div>
+              </div>
+            );
+          }
+        }
+        ReactDOM.render(<Main
+          />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
