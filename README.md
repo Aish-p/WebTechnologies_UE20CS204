@@ -7,5 +7,5 @@ A repository containing the source codes for the Web Technologies Course Assignm
 
 * A3 - REACT JS
 
-* A4 - NODE JS& MONGODB
+* A4 - NODE JS & MONGODB
 
