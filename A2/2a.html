@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>  
+<html>  
+  
+<head>  
+    <title>  
+        JQUERY
+    </title>
+    <style>
+	#btn1{
+		padding: 14px 28px;
+		outline: none;
+		border-radius: 3px;
+		background: rgb(216, 153, 179);
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		font-size: 16px;
+	}
+	#btn2{
+		padding: 14px 48px;
+		outline: none;
+		border-radius: 3px;
+		background: rgb(216, 153, 179);
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		font-size: 16px;
+	}	
+	#btn3{
+		padding: 14px 28px;
+		outline: none;
+		border-radius: 3px;
+		background: rgb(216, 153, 179);
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		font-size: 16px;
+	}	
+	#btn4{
+		padding: 12px 30px;
+		outline: none;
+		border-radius: 3px;
+		background: rgb(109, 113, 116);
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		font-size: 16px;
+	}		
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+</head>  
+<body style="text-align:center;background-color:rgb(208, 197, 193);;">
+    <h1 id="Head" style="color:rgb(216, 156, 46);;font-family:cursive; text-decoration:underline">
+        WHAT IS JQUERY ?
+    </h1> 
+    
+    <p id ="WebTech" style="font-size: 25px; font-weight: bold; color: maroon; align:center; font-family: sans-serif;"> 
+	jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.It is free, open-source software using the permissive MIT License.As of May 2019, jQuery is used by 73% of the 10 million most popular websites.Web analysis indicates that it is the most widely deployed JavaScript library by a large margin, having at least 3 to 4 times more usage than any other JavaScript library.
+
+	jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.
+
+    </p>
+    <br>
+    <button id="btn1" onclick="Fun1()">
+	click here to remove header style
+    </button>
+    <br>
+    <br>
+    <button  id="btn2" onclick="Fun3()">
+	Toggle b/w fading in and fading out
+    </button>
+    <br>
+    <br>
+    <button id="btn3" onclick="Fun2()">
+	click here to remove paragraph style
+    </button>
+    <br>
+    <br>
+    <button id="btn4" onclick="myFunction()">
+	video play
+    </button>
+    <br>
+    <br>
+    <script>  
+        function Fun1() {
+          $('h1').removeAttr('style');
+        } 
+	function Fun2() {
+          $('p').removeAttr('style');
+        } 
+	function Fun3() {
+	  $('h1').fadeToggle();
+	}
+	function myFunction() {
+	var x = document.createElement("VIDEO");
+	if (x.canPlayType("video/mp4")) {
+		x.setAttribute("src","https://www.w3schools.com/jsref/movie.mp4");
+	} 
+	else {
+		x.setAttribute("src","https://www.w3schools.com/jsref/movie.mp4");
+	}
+	x.setAttribute("width", "350");
+	x.setAttribute("height", "250");
+	x.setAttribute("controls", "controls");
+	document.body.appendChild(x);
+	}
+    </script>
+    
+</body>  
+  
+</html>

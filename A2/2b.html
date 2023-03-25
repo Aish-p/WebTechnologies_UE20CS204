@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SIGNUP FORM</title>
+<link rel="stylesheet" href="first2.css" />
+</head>
+<h2>PES UNIVERSITY SIGNUP FORM</h2>
+<body style="background-color:powderblue;">
+
+<div class="flex">
+<form action="#" class="form">
+<label for="firstname">
+*Firstname :
+<input type="text" name="firstname" id="firstname" class="form fn" placeholder="Enter FirstName" required/>
+</label>
+<label for="lastname"> Lastname :
+<input type="text" name="lastname" id="lastname" class="form ln" placeholder="Enter LastName" />
+</label>
+<label for="email">
+*Email Address :
+<input type="email" name="email" id="email" class="form em" placeholder="Enter email id" required/>
+</label>
+<label for="phone">
+*Phone Number :
+<input type="tel" pattern="[6789][0-9]{9}" id="phone" class="form ph" placeholder="Enter phone number"required>
+</label>
+<label for="address">
+*Address :
+<input type="text" name="address" id="address" class="form ad" placeholder="Enter address" required/>
+</label>
+<button type="reset">Reset Form</button>
+<button type="submit">Submit</button>
+<b>" please fill (*) these fields they are mandatory "</b>
+</form>
+<img src="sad.jpg" alt=""
+class="sad-emoji" width="100px" height="100px"
+/>
+<canvas class="canvas" width="400px" height="400px"></canvas>
+</div>
+<hr />
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"/>
+<script>
+const form = document.querySelector('.form'); const canvas = document.querySelector('.canvas'); const ctx = canvas.getContext('2d');
+const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-
+9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zAZ]{2,}))$/;
+function drawEmoji() { ctx.drawImage(img, 10, 10, 100, 100);
+}
+function clearCanvas() {
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+form.addEventListener( 'submit',(e) => { e.preventDefault();
+const firstname = $('#firstname').val(); const lastname = $('#lastname').val(); const email = $('#email').val();
+const phone = $('#phone').val(); const address = $('#address').val();
+if(firstname=="" || email="" || phone="" || address="" ){ drawEmoji();
+}
+if(phone.length < 10) {
+alert("ERROR: Enter a valid Phone number");
+$('#phone').css('border', '1px solid red'); drawEmoji();
+}
+if(!re.test(email)){
+alert("ERROR: Enter a valid email-id");
+}
+else {
+$('#phone').css('border', 'none'); clearCanvas();
+alert("FORM SUBMITTED SUCCESSFULLY");
+console.log(firstname, lastname, email, phone, address);
+}
+},
+{ capture: true }
+);
+</script>
+<script>
+    onclick="submit();"
+  if (firstname!==" " || email!==" " || address!==" " || phnumber!==" ") 
+  {  
+    alert("FORM SUBMITTED SUCCESSFULLY");
+   }
+ </script>
+</html>
+
